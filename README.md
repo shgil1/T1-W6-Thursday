@@ -12,10 +12,8 @@ print(f"The result of adding {a} and {b} os {result}")
 print("Thank you")
 
 
-
-
 # Sequential control flow 
-Executrion of code statements one after another, in the order they appear in the program
+Execution of code statements one after another, in the order they appear in the program
 
 
 # Conditional control flow/ Control flow
@@ -25,7 +23,6 @@ if tomorrow is Saturday
     set alarm for 7
 if tomorrow is Tuesday
     set alarm for 6
-
 
 
 # Boolean Data Type Re-visit
@@ -39,7 +36,9 @@ print(i_am_happy)
 
 # Comparison Operators / Relational Operators
 Decide the relationship between the operands. Result of comparison is a boolean value (true/false)
+x = 5 y = 7 z = 9
 
+print(y ! =z)
 if tomorrow == Saturday
     set alarm for 7
 if tomorrow is Tuesday
@@ -90,7 +89,7 @@ NOT: Works with one operand and reverses the operand value so if its true its fa
 Nested ifs: if you have multiple conditions you can put a nested under a main block that it will check 
 
 age = 20
-has_permission = True
+has_permission = False
 
 if age >= 18:
     if has_permission:
@@ -99,3 +98,43 @@ if age >= 18:
         print("Access denied.")
 else:
     print("Access denied.")
+
+if age >=18 and has_permission:
+    print("Access granted.")
+else:
+    print("Access denied")
+
+# Ternary Operator 
+Condense series of code to one line, where applicable
+
+print("Access granted.") if age >=18 and has_permission else print("Access denied.")
+
+
+temperature = 30
+
+if temperature > 30:
+    message = "It's hot outside"
+else:
+    message = "It's not hot outside"
+
+print(message)
+
+
+message = "It's hot outside" if temperature > 30 else "It's not hot outside"
+
+# Match-case
+Control flow 
+
+day_number = 3
+
+match day_number:
+    case 1:
+        day_name = "Monday"
+    case 2:
+        day_name = "Tuesday"
+    case 3:
+        day_name = "Wednesday"
+    case 4:
+        day_name = "Thursday"
+
+print(day_name)
